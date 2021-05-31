@@ -1,0 +1,88 @@
+/*
+ * rcc.h
+ *
+ *  Created on: 17 mars 2021
+ *      Author: Myren
+ */
+
+#ifndef RCC_H_
+#define RCC_H_
+
+#include <stdint.h>
+
+#define RCC_ADDR 0x40023800
+
+typedef struct
+{
+   volatile uint32_t CR;
+   volatile uint32_t PLLCFGR;
+   volatile uint32_t CFGR;
+   volatile uint32_t CIR;
+   volatile uint32_t AHB1RSTR;
+   volatile uint32_t AHB2RSTR;
+   volatile uint32_t AHB3RSTR;
+   volatile uint32_t reserved_1;
+   volatile uint32_t APB1RSTR;
+   volatile uint32_t APB2RSTR;
+   volatile uint32_t reserved_2;
+   volatile uint32_t reserved_3;
+   volatile uint32_t AHB1ENR;
+   volatile uint32_t AHB2ENR;
+   volatile uint32_t AHB3ENR;
+   volatile uint32_t reserved_4;
+   volatile uint32_t APB1ENR;
+   volatile uint32_t APB2ENR;
+   volatile uint32_t reserved_5;
+   volatile uint32_t reserved_6;
+   volatile uint32_t AHB1LPENR;
+   volatile uint32_t AHB2LPENR;
+   volatile uint32_t AHB3LPENR;
+   volatile uint32_t reserved_7;
+   volatile uint32_t APB1LPENR;
+   volatile uint32_t APB2LPENR;
+   volatile uint32_t reserved_8;
+   volatile uint32_t reserved_9;
+   volatile uint32_t BDCR;
+   volatile uint32_t CSR;
+   volatile uint32_t reserved_10;
+   volatile uint32_t reserved_11;
+   volatile uint32_t SSCGR;
+   volatile uint32_t PLLI2SCFGR;
+}rcc_device_t;
+
+#define RCC ((rcc_device_t*)RCC_ADDR)
+
+typedef enum
+{
+   HSE_CLK,
+   HSI_CLK
+}PPL_src_e;
+
+typedef enum
+{
+   disable = 0,
+   enable
+}enable_disable_e;
+
+typedef struct
+{
+   PPL_src_e source; /* PPL input clock source */
+   enable_disable_e PLL_enable; /* If PLL should be used or not */
+   uint32_t PLLM; /* Clock source divider */
+   uint32_t PLLN; /* PLL multiplier */
+   uint32_t PLLP; /* PPL output clock divider for SYSCLK */
+   uint32_t PLLQ; /* PPL output clock divider for 48 MHz peripheral clock */
+   uint32_t AHB_prescaler; /* 1, 2, ..., 512. Max 168 MHz */
+   uint32_t APB1_prescaler; /* 1, 2, 4, 8, 16. Max 42 MHx */
+   uint32_t APB2_prescaler; /* 1, 2, 4, 8, 16. Max 84 MHz */
+}clock_conf_t;
+
+typedef struct
+{
+   uint32_t PLLN;
+   uint32_t PLLR;
+}PLL_I2S_conf_t;
+
+uint32_t RCC_PLL_config(rcc_device_t* rcc_dev, clock_conf_t* clock_conf);
+
+#endif /* RCC_H_ */

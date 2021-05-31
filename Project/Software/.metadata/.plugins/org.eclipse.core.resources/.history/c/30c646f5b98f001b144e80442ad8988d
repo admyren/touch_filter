@@ -1,0 +1,18 @@
+/*
+ * stm32_flash.h
+ *
+ *  Created on: 28 mars 2021
+ *      Author: Myren
+ */
+
+#ifndef STM32_FLASH_H_
+#define STM32_FLASH_H_
+
+#define FLASH_ADDR
+
+typedef struct
+{
+
+}flash_reg_t;
+
+#endif /* STM32_FLASH_H_ */

@@ -1,0 +1,126 @@
+
+//#include "stm32f4xx.h"
+#include "gpio.h"
+#include "rcc.h"
+
+#define DELAY 1000000
+
+volatile uint32_t count;
+
+void sysclk_init(void)
+{
+#if 0
+   clock_conf_t clk_conf;
+
+   clk_conf.source = HSE_CLK;
+   clk_conf.PLL_enable = enable;
+   //clk_conf.PLL_enable = disable;
+   clk_conf.PLLM = 16; // Input frequency of 2 MHz
+   clk_conf.PLLN = 288; //
+   clk_conf.PLLP = 2;
+   clk_conf.PLLQ = 6;
+   clk_conf.AHB_prescaler = 0x0;
+   clk_conf.APB1_prescaler = 0x5;// 101
+   clk_conf.APB2_prescaler = 0x4;//100
+
+   RCC_PLL_config(RCC, &clk_conf);
+#endif
+
+        /* Turn on HSE clock and wait for it to stabilize  */
+        RCC->CR |= (1 << 16); /* HSEON bit */
+        while (!(RCC->CR & (1 << 17))); /* Wait for HSERDY bit to go high */
+
+        /* Keep PLL turned off */
+        RCC->CR &= ~(1 << 24);
+
+        /* Set HSE as clock input to PLL */
+        RCC->PLLCFGR |= 1 << 22; /* Set PLLSRC bit */
+
+        /* Configure PLL */
+        /* Set PLLM */
+        RCC->PLLCFGR &= ~(0x3F);
+        RCC->PLLCFGR |= 16;
+
+        /* Set PLLN */
+        RCC->PLLCFGR &= ~(0x1FF << 6);
+        RCC->PLLCFGR |= 336 << 6;
+
+        /* Set PLLP to 2 -> 0*/
+        RCC->PLLCFGR &= ~(0x3 << 16);
+        //RCC->PLLCFGR |= 0 << 16;
+
+        /* Set PLLQ */
+        //RCC->PLLCFGR &= ~(0xF << 24);
+        //RCC->PLLCFGR |= 6 << 24;
+
+
+
+        RCC->CR |= 1 << 24; /* Turn on PLL by setting PLLON bit */
+        while (!(RCC->CR & (1 << 25))); /* Wait for PLLRDY bit to go high */
+
+        gpio_pin_set(GPIOC, gpio_pin_3);
+        /* Select PLL as system clock source */
+        RCC->CFGR &= ~0x3;
+        RCC->CFGR |= 0x0; // HSI
+        //RCC->CFGR |= 0x1; // HSE
+        //RCC->CFGR |= 0x2; // PLL
+        //rcc_dev->CFGR |= 1 << 1;
+
+        /* AHB prescaler as 1*/
+        RCC->CFGR &= ~(0xF << 4);
+        //RCC->CFGR |= () << 4;
+        /* APB1 prescaler */
+        RCC->CFGR &= ~(0x7 << 10);
+        RCC->CFGR |= 0x5 << 10;
+        /* APB2 prescaler */
+        RCC->CFGR &= ~(0x7 << 13);
+        RCC->CFGR |= 0x4 << 13;
+
+
+}
+
+void gpio_init_test(void)
+{
+#if 0
+   RCC->AHB1ENR |= (1 << 2);
+
+   GPIOC->MODER |= (1 << 4);
+
+#else
+   gpio_config_t gpio_conf;
+
+   gpio_conf.mode = gpio_gpo;
+   gpio_conf.output_type = gpio_opp;
+   gpio_conf.output_speed = gpio_ms;
+   gpio_conf.pull_up_down = gpio_no_pull;
+   gpio_conf.alternate_func = gpio_af_0;
+   gpio_conf.lock = gpio_lock_off;
+   gpio_conf.pins = gpio_pin_2 | gpio_pin_3;
+
+   RCC->AHB1ENR |= (1 << 2);
+   gpio_init(GPIOC, &gpio_conf);
+#endif
+}
+
+
+int main(void)
+{
+   gpio_init_test();
+   sysclk_init();
+
+   while(1)
+   {
+#if 1
+      for(count=0; count<DELAY; count++);
+      gpio_pin_set(GPIOC, gpio_pin_2);
+      //gpio_pin_reset(GPIOC, gpio_pin_3);
+      for(count=0; count<DELAY; count++);
+      //gpio_pin_set(GPIOC, gpio_pin_3);
+      gpio_pin_reset(GPIOC, gpio_pin_2);
+#endif
+#if 0
+      for(count=0; count<DELAY; count++);
+      GPIOC->ODR ^= (1 << 2);
+#endif
+   }
+}

@@ -1,0 +1,42 @@
+/*
+ * gpio.c
+ *
+ *  Created on: 10 mars 2021
+ *      Author: Myren
+ */
+
+#include "gpio.h"
+
+uint32_t gpio_init(gpio_device_t gpio_dev, gpio_config_t gpio_conf)
+{
+   uint32_t ret = 0;
+   gpio_dev->MODER;
+   gpio_dev->OTYPER;
+   gpio_dev->OSPEEDR;
+   gpio_dev->PUPDR;
+   gpio_dev->LCKR;
+   gpio_dev->AFR[0];
+   gpio_dev->AFR[1];
+
+   return(ret);
+}
+
+void gpio_pin_set(gpio_device_t gpio_dev, uint32_t pins)
+{
+
+}
+
+void gpio_pin_reset(gpio_device_t gpio_dev, uint32_t pins)
+{
+
+}
+
+void gpio_pin_toggle(gpio_device_t gpio_dev, uint32_t pins)
+{
+
+}
+
+uint32_t gpio_pin_read(gpio_device_t gpio_dev, gpio_pin_e pin)
+{
+
+}
