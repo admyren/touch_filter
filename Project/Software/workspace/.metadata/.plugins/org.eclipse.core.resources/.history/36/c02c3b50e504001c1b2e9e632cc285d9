@@ -1,0 +1,16 @@
+/*
+ * stm32_dma.h
+ *
+ *  Created on: 24 aug. 2021
+ *      Author: Myren
+ */
+
+#ifndef STM32_DMA_H_
+#define STM32_DMA_H_
+
+#include "stm32f405xx.h"
+
+
+void DMA_config(DMA_Stream_TypeDef* hdma, DMA_InitVals idma);
+
+#endif /* STM32_DMA_H_ */

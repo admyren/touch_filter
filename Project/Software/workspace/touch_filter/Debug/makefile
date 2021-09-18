@@ -38,7 +38,7 @@ all: touch_filter.elf
 touch_filter.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU GCC Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list" $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list" $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

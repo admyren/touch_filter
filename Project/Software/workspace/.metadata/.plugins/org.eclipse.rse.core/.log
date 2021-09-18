@@ -1,4 +1,4 @@
-Mon May 31 21:49:05 CEST 2021
+Fri Aug 13 21:26:30 CEST 2021
 ERROR org.eclipse.rse.core  Unexpected Exception
 java.net.UnknownHostException: Adams-MacBook-Pro.local: Adams-MacBook-Pro.local: nodename nor servname provided, or not known
 	at java.net.InetAddress.getLocalHost(InetAddress.java:1475)

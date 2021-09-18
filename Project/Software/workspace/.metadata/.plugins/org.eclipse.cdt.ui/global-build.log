@@ -1,51 +1,1365 @@
-20:32:40 **** Incremental Build of configuration Debug for project touch_filter ****
+00:04:29 **** Incremental Build of configuration Release for project touch_filter ****
+make all 
+Building file: ../startup/startup_stm32.s
+Invoking: MCU GCC Assembler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Release
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+Finished building: ../startup/startup_stm32.s
+ 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Release
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/stm32_dma.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Release
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_dma.d" -MT"src/stm32_dma.o" -o "src/stm32_dma.o" "../src/stm32_dma.c"
+Finished building: ../src/stm32_dma.c
+ 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Release
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:67:12: warning: implicit declaration of function 'HAL_RCC_GetPCLK1Freq' [-Wimplicit-function-declaration]
+    pclk1 = HAL_RCC_GetPCLK1Freq();
+            ^
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:89:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:208:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building file: ../src/stm32_uart.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Release
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_uart.d" -MT"src/stm32_uart.o" -o "src/stm32_uart.o" "../src/stm32_uart.c"
+Finished building: ../src/stm32_uart.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size -B "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5524	   1084	   1632	   8240	   2030	touch_filter.elf
+ 
+00:04:37 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-20:32:54 **** Incremental Build of configuration Debug for project touch_filter ****
+00:10:20 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-20:33:25 **** Incremental Build of configuration Debug for project touch_filter ****
+00:10:38 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-20:33:40 **** Incremental Build of configuration Debug for project touch_filter ****
+00:15:07 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-21:29:51 **** Incremental Build of configuration Debug for project touch_filter ****
+00:17:02 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-21:30:33 **** Incremental Build of configuration Debug for project touch_filter ****
+00:17:16 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:67:12: warning: implicit declaration of function 'HAL_RCC_GetPCLK1Freq' [-Wimplicit-function-declaration]
+    pclk1 = HAL_RCC_GetPCLK1Freq();
+            ^
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:89:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:208:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8056	   1084	   1632	  10772	   2a14	touch_filter.elf
+ 
+00:17:29 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:67:12: warning: implicit declaration of function 'HAL_RCC_GetPCLK1Freq' [-Wimplicit-function-declaration]
+    pclk1 = HAL_RCC_GetPCLK1Freq();
+            ^
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:89:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:208:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8056	   1084	   1632	  10772	   2a14	touch_filter.elf
+ 
+00:17:41 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:67:12: warning: implicit declaration of function 'HAL_RCC_GetPCLK1Freq' [-Wimplicit-function-declaration]
+    pclk1 = HAL_RCC_GetPCLK1Freq();
+            ^
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:89:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:208:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8056	   1084	   1632	  10772	   2a14	touch_filter.elf
+ 
+00:18:11 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:67:12: warning: implicit declaration of function 'HAL_RCC_GetPCLK1Freq' [-Wimplicit-function-declaration]
+    pclk1 = HAL_RCC_GetPCLK1Freq();
+            ^
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:89:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:208:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8048	   1084	   1632	  10764	   2a0c	touch_filter.elf
+ 
+00:20:31 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7920	   1084	   1632	  10636	   298c	touch_filter.elf
+ 
+00:21:14 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-21:32:41 **** Incremental Build of configuration Debug for project touch_filter ****
+00:22:08 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-21:36:32 **** Incremental Build of configuration Debug for project touch_filter ****
+00:24:02 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7960	   1084	   1632	  10676	   29b4	touch_filter.elf
+ 
+00:25:27 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8276	   1084	   1632	  10992	   2af0	touch_filter.elf
+ 
+00:26:35 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8324	   1084	   1632	  11040	   2b20	touch_filter.elf
+ 
+10:53:16 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/communication.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/communication.d" -MT"src/communication.o" -o "src/communication.o" "../src/communication.c"
+Finished building: ../src/communication.c
+ 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/stm32_rcc.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_rcc.d" -MT"src/stm32_rcc.o" -o "src/stm32_rcc.o" "../src/stm32_rcc.c"
+In file included from ../src/stm32_rcc.c:11:0:
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc/stm32_flash.h:24:0: warning: "FLASH" redefined
+ #define FLASH ((flash_reg_t*)FLASH_ADDR)
+ ^
+In file included from /Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc/stm32_rcc.h:13:0,
+                 from ../src/stm32_rcc.c:9:
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device/stm32f405xx.h:1022:0: note: this is the location of the previous definition
+ #define FLASH               ((FLASH_TypeDef *) FLASH_R_BASE)
+ ^
+Finished building: ../src/stm32_rcc.c
+ 
+Building file: ../src/stm32_uart.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_uart.d" -MT"src/stm32_uart.o" -o "src/stm32_uart.o" "../src/stm32_uart.c"
+../src/stm32_uart.c:12:17: fatal error: rcc.h: No such file or directory
+compilation terminated.
+make: *** [src/stm32_uart.o] Error 1
+10:53:38 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_uart.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_uart.d" -MT"src/stm32_uart.o" -o "src/stm32_uart.o" "../src/stm32_uart.c"
+Finished building: ../src/stm32_uart.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8548	   1084	   1632	  11264	   2c00	touch_filter.elf
+ 
+10:53:46 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-21:36:56 **** Incremental Build of configuration Debug for project touch_filter ****
+11:14:26 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/stm32_i2s.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2s.d" -MT"src/stm32_i2s.o" -o "src/stm32_i2s.o" "../src/stm32_i2s.c"
+Finished building: ../src/stm32_i2s.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8792	   1084	   1632	  11508	   2cf4	touch_filter.elf
+ 
+11:14:42 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-21:37:07 **** Incremental Build of configuration Debug for project touch_filter ****
+12:02:56 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2s.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2s.d" -MT"src/stm32_i2s.o" -o "src/stm32_i2s.o" "../src/stm32_i2s.c"
+Finished building: ../src/stm32_i2s.c
+ 
+Building file: ../src/stm32_rcc.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_rcc.d" -MT"src/stm32_rcc.o" -o "src/stm32_rcc.o" "../src/stm32_rcc.c"
+In file included from ../src/stm32_rcc.c:11:0:
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc/stm32_flash.h:24:0: warning: "FLASH" redefined
+ #define FLASH ((flash_reg_t*)FLASH_ADDR)
+ ^
+In file included from /Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc/stm32_rcc.h:13:0,
+                 from ../src/stm32_rcc.c:9:
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device/stm32f405xx.h:1022:0: note: this is the location of the previous definition
+ #define FLASH               ((FLASH_TypeDef *) FLASH_R_BASE)
+ ^
+Finished building: ../src/stm32_rcc.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8792	   1084	   1632	  11508	   2cf4	touch_filter.elf
+ 
+12:36:47 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2s.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2s.d" -MT"src/stm32_i2s.o" -o "src/stm32_i2s.o" "../src/stm32_i2s.c"
+Finished building: ../src/stm32_i2s.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8792	   1084	   1632	  11508	   2cf4	touch_filter.elf
+ 
+12:37:55 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:216:4: warning: implicit declaration of function 'i2s_config' [-Wimplicit-function-declaration]
+    i2s_config();
+    ^
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9104	   1084	   1632	  11820	   2e2c	touch_filter.elf
+ 
+12:38:33 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/stm32_i2s.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2s.d" -MT"src/stm32_i2s.o" -o "src/stm32_i2s.o" "../src/stm32_i2s.c"
+Finished building: ../src/stm32_i2s.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9104	   1084	   1632	  11820	   2e2c	touch_filter.elf
+ 
+12:42:18 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9104	   1084	   1632	  11820	   2e2c	touch_filter.elf
+ 
+12:42:35 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-21:37:20 **** Incremental Build of configuration Debug for project touch_filter ****
+12:54:05 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9228	   1084	   1632	  11944	   2ea8	touch_filter.elf
+ 
+12:54:20 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-19:55:42 **** Incremental Build of configuration Debug for project touch_filter ****
+12:54:53 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-19:57:09 **** Incremental Build of configuration Debug for project touch_filter ****
+13:20:59 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:125:12: warning: implicit declaration of function 'HAL_RCC_GetPCLK1Freq' [-Wimplicit-function-declaration]
+    pclk1 = HAL_RCC_GetPCLK1Freq();
+            ^
+../src/stm32_i2c.c:90:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:209:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9232	   1084	   1632	  11948	   2eac	touch_filter.elf
+ 
+13:22:52 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:90:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:210:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9236	   1084	   1632	  11952	   2eb0	touch_filter.elf
+ 
+13:27:23 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:90:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:210:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9236	   1084	   1632	  11952	   2eb0	touch_filter.elf
+ 
+13:35:29 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:31:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:93:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:92:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:214:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9212	   1084	   1632	  11928	   2e98	touch_filter.elf
+ 
+13:35:37 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-19:57:25 **** Incremental Build of configuration Debug for project touch_filter ****
+15:55:05 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9220	   1084	   1632	  11936	   2ea0	touch_filter.elf
+ 
+15:55:26 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9212	   1084	   1632	  11928	   2e98	touch_filter.elf
+ 
+15:55:54 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9220	   1084	   1632	  11936	   2ea0	touch_filter.elf
+ 
+15:56:29 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9212	   1084	   1632	  11928	   2e98	touch_filter.elf
+ 
+15:57:47 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9144	   1084	   1632	  11860	   2e54	touch_filter.elf
+ 
+15:57:56 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-19:58:47 **** Incremental Build of configuration Debug for project touch_filter ****
+15:58:04 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-22:21:52 **** Incremental Build of configuration Debug for project touch_filter ****
+15:58:14 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9212	   1084	   1632	  11928	   2e98	touch_filter.elf
+ 
+15:59:00 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:31:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:93:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:92:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:214:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building file: ../src/stm32_rcc.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_rcc.d" -MT"src/stm32_rcc.o" -o "src/stm32_rcc.o" "../src/stm32_rcc.c"
+In file included from ../src/stm32_rcc.c:11:0:
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc/stm32_flash.h:24:0: warning: "FLASH" redefined
+ #define FLASH ((flash_reg_t*)FLASH_ADDR)
+ ^
+In file included from /Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc/stm32_rcc.h:13:0,
+                 from ../src/stm32_rcc.c:9:
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device/stm32f405xx.h:1022:0: note: this is the location of the previous definition
+ #define FLASH               ((FLASH_TypeDef *) FLASH_R_BASE)
+ ^
+Finished building: ../src/stm32_rcc.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9156	   1084	   1632	  11872	   2e60	touch_filter.elf
+ 
+16:00:17 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9232	   1084	   1632	  11948	   2eac	touch_filter.elf
+ 
+16:00:27 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
-22:22:04 **** Incremental Build of configuration Debug for project touch_filter ****
+16:00:44 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:31:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:93:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:92:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:214:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building file: ../src/stm32_rcc.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_rcc.d" -MT"src/stm32_rcc.o" -o "src/stm32_rcc.o" "../src/stm32_rcc.c"
+In file included from ../src/stm32_rcc.c:11:0:
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc/stm32_flash.h:24:0: warning: "FLASH" redefined
+ #define FLASH ((flash_reg_t*)FLASH_ADDR)
+ ^
+In file included from /Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc/stm32_rcc.h:13:0,
+                 from ../src/stm32_rcc.c:9:
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device/stm32f405xx.h:1022:0: note: this is the location of the previous definition
+ #define FLASH               ((FLASH_TypeDef *) FLASH_R_BASE)
+ ^
+Finished building: ../src/stm32_rcc.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9220	   1084	   1632	  11936	   2ea0	touch_filter.elf
+ 
+16:00:56 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:31:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:93:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:92:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:214:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building file: ../src/stm32_rcc.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_rcc.d" -MT"src/stm32_rcc.o" -o "src/stm32_rcc.o" "../src/stm32_rcc.c"
+In file included from ../src/stm32_rcc.c:11:0:
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc/stm32_flash.h:24:0: warning: "FLASH" redefined
+ #define FLASH ((flash_reg_t*)FLASH_ADDR)
+ ^
+In file included from /Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc/stm32_rcc.h:13:0,
+                 from ../src/stm32_rcc.c:9:
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device/stm32f405xx.h:1022:0: note: this is the location of the previous definition
+ #define FLASH               ((FLASH_TypeDef *) FLASH_R_BASE)
+ ^
+Finished building: ../src/stm32_rcc.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9232	   1084	   1632	  11948	   2eac	touch_filter.elf
+ 
+20:03:45 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9276	   1084	   1632	  11992	   2ed8	touch_filter.elf
+ 
+20:05:01 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9460	   1084	   1632	  12176	   2f90	touch_filter.elf
+ 
+20:05:57 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9572	   1084	   1632	  12288	   3000	touch_filter.elf
+ 
+20:06:16 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9528	   1084	   1632	  12244	   2fd4	touch_filter.elf
+ 
+20:06:26 **** Incremental Build of configuration Debug for project touch_filter ****
 make all 
 make: Nothing to be done for `all'.
+20:07:13 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+make: Nothing to be done for `all'.
+20:13:20 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+make: Nothing to be done for `all'.
+20:16:27 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:31:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:93:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:92:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c_sendAddress':
+../src/stm32_i2c.c:216:22: warning: unused variable 'dummy' [-Wunused-variable]
+    volatile uint32_t dummy = I2C1->SR2;
+                      ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9492	   1084	   1632	  12208	   2fb0	touch_filter.elf
+ 
+20:17:05 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:31:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:93:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:92:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9492	   1084	   1632	  12208	   2fb0	touch_filter.elf
+ 
+20:17:24 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:31:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:93:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:92:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9492	   1084	   1632	  12208	   2fb0	touch_filter.elf
+ 
+20:21:20 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/stm32_i2c.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32_i2c.d" -MT"src/stm32_i2c.o" -o "src/stm32_i2c.o" "../src/stm32_i2c.c"
+../src/stm32_i2c.c: In function 'i2c1_init':
+../src/stm32_i2c.c:32:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:31:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+../src/stm32_i2c.c: In function 'i2c2_init':
+../src/stm32_i2c.c:93:18: warning: variable 'gpio_conf' set but not used [-Wunused-but-set-variable]
+    gpio_config_t gpio_conf;
+                  ^
+../src/stm32_i2c.c:92:19: warning: unused variable 'scl_freq' [-Wunused-variable]
+    const uint32_t scl_freq = 100000;
+                   ^
+Finished building: ../src/stm32_i2c.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9492	   1084	   1632	  12208	   2fb0	touch_filter.elf
+ 
+20:28:11 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9492	   1084	   1632	  12208	   2fb0	touch_filter.elf
+ 
+20:28:28 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9492	   1084	   1632	  12208	   2fb0	touch_filter.elf
+ 
+20:30:01 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9492	   1084	   1632	  12208	   2fb0	touch_filter.elf
+ 
+20:30:19 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9492	   1084	   1632	  12208	   2fb0	touch_filter.elf
+ 
+20:30:44 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9492	   1084	   1632	  12208	   2fb0	touch_filter.elf
+ 
+20:32:34 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9492	   1084	   1632	  12208	   2fb0	touch_filter.elf
+ 
+20:34:36 **** Incremental Build of configuration Debug for project touch_filter ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32F405RGTx -DSTM32 -DSTM32F4 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -DUSE_RTOS_SYSTICK -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/HAL_Driver/Inc/Legacy" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/include" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/core" -I"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: touch_filter.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"/Users/Myren/Documents/touch_filter_fx/Project/Software/workspace/touch_filter/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "touch_filter.elf" @"objects.list"  
+Finished building target: touch_filter.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "touch_filter.elf" "touch_filter.bin"
+arm-none-eabi-size "touch_filter.elf"
+   text	   data	    bss	    dec	    hex	filename
+   9532	   1084	   1632	  12248	   2fd8	touch_filter.elf
+ 

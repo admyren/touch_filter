@@ -8,6 +8,33 @@
 #ifndef STM32_UART_H_
 #define STM32_UART_H_
 
+#include "stm32f4xx.h"
+#include "stm32f405xx.h"
+#include "stm32f4xx_hal.h"
+#include <stdint.h>
+#include <stdlib.h>
+
+
+void UART_Init(USART_TypeDef* huart,
+               uint32_t baud,
+               uint8_t* RX_buff,
+               uint8_t RX_size);
+void UART_Transmit(USART_TypeDef* huart, uint8_t* data, uint8_t size);
+void UART_Transmit_DMA(USART_TypeDef* huart, uint8_t* data_buffer, uint32_t size);
+
+void UART_register_rx_complete_func(void (*func)(void));
+
+void UART_register_tx_complete_func(void (*func)(void));
+
+void DMA1_Stream2_IRQHandler(void);
+void DMA1_Stream4_IRQHandler(void);
+void UART4_IRQHandler(void);
+
+//void initUART(uint32_t BAUD);
+//void UART_puts(uint8_t* data, uint16_t size);
+
+
+#if 0
 #include <stdint.h>
 
 #include "common.h"
@@ -77,7 +104,7 @@ typedef struct
 
 uint32_t UART_config(uart_reg_t* uart_dev, uart_config_t* uart_conf);
 void UART_tx(uart_reg_t* uart_dev, uint8_t* data, uint32_t size);
-
+#endif
 
 
 

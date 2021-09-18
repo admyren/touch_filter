@@ -8,6 +8,7 @@
 #ifndef STM32_FLASH_H_
 #define STM32_FLASH_H_
 
+
 #define FLASH_ADDR 0x40023C00
 
 typedef struct
