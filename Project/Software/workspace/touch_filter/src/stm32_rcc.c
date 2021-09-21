@@ -278,7 +278,7 @@ uint32_t RCC_PLLI2S_config(void)
       }
    }
 
-   /* Select PLLI2S as I2S clock source */
+   /* Select PLLI2S as I2S clock source, I2SSRC */
    RCC->CFGR &= ~(1 << 23);
 
    return ret;
