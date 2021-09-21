@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;touch_filter/src/gpio.c&apos;" deleteContents="false" description="Delete resource &apos;touch_filter/src/gpio.c&apos;" element1="/touch_filter/src/gpio.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1629814557827"/>&#x0A;<refactoring comment="Delete resource &apos;touch_filter/inc/gpio.h&apos;" deleteContents="false" description="Delete resource &apos;touch_filter/inc/gpio.h&apos;" element1="/touch_filter/inc/gpio.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1629814564782"/>
-</session>
