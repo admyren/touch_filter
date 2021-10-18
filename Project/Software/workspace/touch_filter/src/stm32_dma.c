@@ -19,8 +19,6 @@ void DMA_config(DMA_Stream_TypeDef* hdma, DMA_InitVals idma)
    hdma->CR |= (idma.memDataSize << 13) | (idma.periphDataSize << 11);
    // Memory increment mode
    hdma->CR |= (1 << 10);
-   // Circular mode
-   //hdma->CR |= (1 << 8);
    // Number of transfers
    hdma->NDTR = idma.bufferSize;
    // Address to peripheral data registers

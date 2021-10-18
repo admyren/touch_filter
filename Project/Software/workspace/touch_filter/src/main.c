@@ -1,4 +1,6 @@
 
+#include <string.h>
+
 //#include "stm32f4xx.h"
 #include "stm32_gpio.h"
 #include "stm32_rcc.h"
@@ -7,9 +9,11 @@
 #include "stm32_i2s.h"
 
 
-#define DELAY 1000000
+#define DELAY 4000000
 
 #define UART_BUFF_SIZE 50
+#define I2S_BUFF_SIZE  100
+
 volatile uint8_t UART_buff[UART_BUFF_SIZE];
 
 volatile uint8_t uart_receive_ready = 0;
@@ -17,7 +21,24 @@ volatile uint8_t uart_transmit_ready = 1;
 
 volatile uint32_t count;
 
+uint16_t i2s_rx_buff[I2S_BUFF_SIZE];
+uint16_t i2s_tx_buff[I2S_BUFF_SIZE];
+
+volatile uint32_t i2s_dma_rx_transfer_cnt = 0;
+volatile uint32_t i2s_dma_tx_transfer_cnt = 0;
+
+
 void SystemClock_Config(void);
+
+void I2S_RX_comp(void)
+{
+   i2s_dma_rx_transfer_cnt++;
+}
+
+void I2S_TX_comp(void)
+{
+   i2s_dma_tx_transfer_cnt++;
+}
 
 void UART_RX_comp(void)
 {
@@ -29,6 +50,7 @@ void UART_TX_comp(void)
    uart_transmit_ready = 1;
 }
 
+
 void i2c_test(void)
 {
    //i2c_stop(I2C1);
@@ -38,25 +60,25 @@ void i2c_test(void)
    {
       while(0 == uart_transmit_ready);
       UART_Transmit_DMA(UART4, (uint8_t*)"I2C1 ready timed out\n", sizeof("I2C1 ready timed out"));
-      uart_transmit_ready = 0;
+      uart_transmit_ready = 1;
    }
    else
    {
       while(0 == uart_transmit_ready);
       UART_Transmit_DMA(UART4, (uint8_t*)"I2C1 ready\n", sizeof("I2C1 ready"));
-      uart_transmit_ready = 0;
+      uart_transmit_ready = 1;
    }
    if (0 != i2c_checkReady(I2C2))
    {
       while(0 == uart_transmit_ready);
       UART_Transmit_DMA(UART4, (uint8_t*)"I2C2 ready timed out\n", sizeof("I2C2 ready timed out"));
-      uart_transmit_ready = 0;
+      uart_transmit_ready = 1;
    }
    else
    {
       while(0 == uart_transmit_ready);
       UART_Transmit_DMA(UART4, (uint8_t*)"I2C2 ready\n", sizeof("I2C2 ready"));
-      uart_transmit_ready = 0;
+      uart_transmit_ready = 1;
    }
 #endif
    if (0 != i2c_start(I2C1))
@@ -66,7 +88,7 @@ void i2c_test(void)
       if (1 == uart_transmit_ready)
       {
          UART_Transmit_DMA(UART4, (uint8_t*)"I2C1 start timed out\n", sizeof("I2C1 start timed out"));
-         uart_transmit_ready = 0;
+         uart_transmit_ready = 1;
       }
 #endif
    }
@@ -74,20 +96,20 @@ void i2c_test(void)
    {
       while(0 == uart_transmit_ready);
       UART_Transmit_DMA(UART4, (uint8_t*)"I2C1 start valid\n", sizeof("I2C1 start valid"));
-      uart_transmit_ready = 0;
+      uart_transmit_ready = 1;
    }
 
    if (0 != i2c_sendAddress(I2C1, 0x68 << 1))
    {
       while(0 == uart_transmit_ready);
       UART_Transmit_DMA(UART4, (uint8_t*)"I2C1 address timed out\n", sizeof("I2C1 address timed out"));
-      uart_transmit_ready = 0;
+      uart_transmit_ready = 1;
    }
    else
    {
       while(0 == uart_transmit_ready);
       UART_Transmit_DMA(UART4, (uint8_t*)"I2C1 address valid\n", sizeof("I2C1 address valid"));
-      uart_transmit_ready = 0;
+      uart_transmit_ready = 1;
    }
 
 
@@ -97,26 +119,26 @@ void i2c_test(void)
       if (1 == uart_transmit_ready)
       {
          UART_Transmit_DMA(UART4, (uint8_t*)"I2C2 start timed out\n", sizeof("I2C2 start timed out"));
-         uart_transmit_ready = 0;
+         uart_transmit_ready = 1;
       }
    }
    else
    {
       while(0 == uart_transmit_ready);
       UART_Transmit_DMA(UART4, (uint8_t*)"I2C2 start valid\n", sizeof("I2C2 start valid"));
-      uart_transmit_ready = 0;
+      uart_transmit_ready = 1;
    }
    if (0 != i2c_sendAddress(I2C2, 0x34 << 1))
    {
       while(0 == uart_transmit_ready);
       UART_Transmit_DMA(UART4, (uint8_t*)"I2C2 address timed out\n", sizeof("I2C2 address timed out"));
-      uart_transmit_ready = 0;
+      uart_transmit_ready = 1;
    }
    else
    {
       while(0 == uart_transmit_ready);
       UART_Transmit_DMA(UART4, (uint8_t*)"I2C2 address valid\n", sizeof("I2C2 address valid"));
-      uart_transmit_ready = 0;
+      uart_transmit_ready = 1;
    }
 
    // Address:0x34
@@ -217,6 +239,7 @@ void gpio_init_test(void)
 
 int main(void)
 {
+   uint8_t uart_buff[100];
 
 
    //sysclk_init();
@@ -226,8 +249,12 @@ int main(void)
    //init_uart();
    UART_Init(UART4, 115200, (uint8_t*)UART_buff, UART_BUFF_SIZE);
 
+   
    UART_register_rx_complete_func(UART_RX_comp);
    UART_register_tx_complete_func(UART_TX_comp);
+   
+   I2S_register_rx_complete_callback(I2S_RX_comp);
+   I2S_register_tx_complete_callback(I2S_TX_comp);
 
    i2c_test_init();
 
@@ -235,17 +262,17 @@ int main(void)
    {
       while(0 == uart_transmit_ready);
       UART_Transmit_DMA(UART4, (uint8_t*)"PLLI2S locked\n", sizeof("PLLI2S locked"));
-      uart_transmit_ready = 0;
+      uart_transmit_ready = 1;
    }
    else
    {
       while(0 == uart_transmit_ready);
       UART_Transmit_DMA(UART4, (uint8_t*)"PLLI2S not locked\n", sizeof("PLLI2S not locked"));
-      uart_transmit_ready = 0;
+      uart_transmit_ready = 1;
    }
 
 
-   i2s_config();
+   i2s_config(i2s_rx_buff, i2s_tx_buff, I2S_BUFF_SIZE);
 
    delay_dummy(10*DELAY);
 
@@ -263,6 +290,18 @@ int main(void)
       gpio_pin_set(GPIOC, gpio_pin_3);
       gpio_pin_reset(GPIOC, gpio_pin_2);
 #endif
+      sprintf(uart_buff, "rx: %u, tx: %u\n", i2s_dma_rx_transfer_cnt, i2s_dma_tx_transfer_cnt);
+      UART_Transmit_DMA(UART4, uart_buff, strlen(uart_buff));
+      sprintf(uart_buff, "TX OVR: %s, TX UDR: %s, TX FRE: %s\n"
+              "RX OVR: %s, RX UDR: %s, RX FRE: %s\n", 
+              SPI2->SR & (1 << 6) ? "TRUE" : "FALSE",
+              SPI2->SR & (1 << 3) ? "TRUE" : "FALSE",
+              SPI2->SR & (1 << 8) ? "TRUE" : "FALSE",
+              I2S2ext->SR & (1 << 6) ? "TRUE" : "FALSE",
+              I2S2ext->SR & (1 << 3) ? "TRUE" : "FALSE",
+              I2S2ext->SR & (1 << 8) ? "TRUE" : "FALSE");
+      UART_Transmit_DMA(UART4, uart_buff, strlen(uart_buff));
+
 
 #if 0
       if (1 == uart_transmit_ready)

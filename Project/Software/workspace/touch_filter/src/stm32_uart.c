@@ -14,7 +14,7 @@
 #include "stm32_gpio.h"
 
 
-#define DMA_AND_INTERRUPT_ENABLE
+//#define DMA_AND_INTERRUPT_ENABLE
 
 uint32_t UART_RX_buff_size = 0;
 
@@ -129,9 +129,13 @@ void UART_Init(USART_TypeDef* huart,
 
 void UART_Transmit_DMA(USART_TypeDef* huart, uint8_t* data_buffer, uint32_t size)
 {
+#if 0
    memcpy(UART_TX_buffer, data_buffer, size);
 
    DMA_start_TX(DMA1_Stream4, size);
+#endif
+   UART_Transmit(huart, data_buffer, size);
+
 }
 
 // Data should be a null terminated string if size == 0.
@@ -170,7 +174,7 @@ void UART_register_tx_complete_func(void (*func)(void))
 }
 
 
-
+#ifdef DMA_AND_INTERRUPT_ENABLE
 void DMA1_Stream2_IRQHandler(void)
 {
    // Transfer complete interrupt?
@@ -217,7 +221,7 @@ void UART4_IRQHandler(void)
       (void)dummy; // Prevent compiler warnings
    }
 }
-
+#endif
 
 
 #if 0
